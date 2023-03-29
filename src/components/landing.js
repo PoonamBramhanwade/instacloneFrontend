@@ -14,7 +14,7 @@ const Landing = () => {
 
 
             <div className="welcome">
-                <h1>welcome to 10x instaclone</h1>
+                <h1>welcome to 10x</h1>
                 <NavLink to="/allpost"> <button>Enter</button></NavLink>
 
             </div>
