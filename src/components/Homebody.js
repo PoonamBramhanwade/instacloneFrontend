@@ -8,9 +8,14 @@ import "./homebody.css"
 function Homebody() {
   const [data,setData] =useState([])
   useEffect(()=>{
-    fetch("http://localhost:8080/allpost")
+    fetch("https://instaclone-3h3l.onrender.com/allpost")
     .then(res=>res.json())
-    .then(result=> setData(result))
+
+    .then(result=> {
+      console.log(result)
+      setData(result)
+    })
+    
 })
   return (
     data.map((item,index)=>{

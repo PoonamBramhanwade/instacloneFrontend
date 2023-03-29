@@ -21,7 +21,7 @@ function Postform() {
   useEffect(()=>{
     console.log(url)
     if(url){
-      fetch("http://localhost:8080/addpost",{
+      fetch("https://instaclone-3h3l.onrender.com/addpost",{
         method:"Post",
         headers: {
           "Content-Type": "application/json"

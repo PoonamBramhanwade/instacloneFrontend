@@ -26,7 +26,7 @@
 .welcomeimage{
     height: 350px;
     width: 460px;
-    border: 2px solid black;
+    /*  */
 }
 .welcome button{
     font-size: 1.3em;
