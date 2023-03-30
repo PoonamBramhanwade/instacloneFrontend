@@ -82,32 +82,33 @@ function Postform() {
        setImage(e.target.files[0])
       }} />
       </div>
+
       <div className='author'>
       <input placeholder='Author' type="text" onChange={(e)=>{
        setName(e.target.value)
       }}/>
       </div>
+
       <div className='location'>
       <input placeholder='location' type="text" onChange={(e)=>{
        setLocation(e.target.value)
       }} />
       </div>
+
       <div className='descreption'>
       <input placeholder='Description' type="text" onChange={(e)=>{
        setDescreption(e.target.value)
       }} />
       </div>
-      <div className='postbtn'>
-    <Button variant="primary" className='upload' onClick={()=>{
-     
-        postimage()
 
-      }} >
+      <div className='postbtn'>
+    <Button variant="primary" className='upload' onClick={()=>{ postimage() }} >
         POST
       </Button>
       </div>
-     {toggle &&  <h1 className='loader'>Plzz Enter All Details..</h1>}
-     {toggle2 &&  <h1 className='loader2'>Uploading- Plzz wait..</h1>}
+
+     {toggle &&  <h1 className='loader'>Enter All Details..</h1>}
+     {toggle2 &&  <h1 className='loader2'> Uploading: Please wait..</h1>}
      
     </div>
   )
